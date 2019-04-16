@@ -13,24 +13,24 @@
   <body>
     <h1 class="display-4 text-center">Entre em Contato</h1>
     <div class="container mt-5">
-        <form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputName4">Nome</label>
-      <input type="text" class="form-control" id="inputName4" placeholder="Nome">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Mensagem</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
+        <form method="POST" action="send.php">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputName4">Nome</label>
+              <input type="text" class="form-control" id="inputName4" placeholder="Nome" name="nome">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensagem"></textarea>
+          </div>
   
-  <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
     </div>
 
     <!-- Optional JavaScript -->
